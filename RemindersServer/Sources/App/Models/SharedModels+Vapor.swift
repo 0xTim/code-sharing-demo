@@ -1,6 +1,6 @@
 import FluentSQLite
 import Vapor
-import SharedModels
+import RemindersCore
 
 extension Reminder: SQLiteModel {}
 extension Reminder: Migration {

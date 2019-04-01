@@ -1,5 +1,5 @@
 import Vapor
-import SharedModels
+import RemindersCore
 import FluentSQLite
 import Foundation
 

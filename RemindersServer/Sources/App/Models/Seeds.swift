@@ -1,4 +1,4 @@
-import SharedModels
+import RemindersCore
 import FluentSQLite
 
 struct DefaultUsers: SQLiteMigration {
