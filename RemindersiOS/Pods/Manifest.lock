@@ -1,0 +1,16 @@
+PODS:
+  - RemindersCore (0.0.1)
+
+DEPENDENCIES:
+  - RemindersCore (from `../RemindersCore`)
+
+EXTERNAL SOURCES:
+  RemindersCore:
+    :path: "../RemindersCore"
+
+SPEC CHECKSUMS:
+  RemindersCore: 59aad939e529fe82eab7997b99849576216bbdbe
+
+PODFILE CHECKSUM: 7af9ca7b71d2119eada1d978e459b25f2bf54fc3
+
+COCOAPODS: 1.6.1

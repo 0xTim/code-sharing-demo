@@ -1,0 +1,18 @@
+{
+  "name": "RemindersCore",
+  "version": "0.0.1",
+  "summary": "Reminders Core for cross-platform sharing",
+  "description": "iOS Podspec for RemindersCore for sharing between iOS and Server",
+  "homepage": "https://bitbucket.org/brokenhandsio/CodeSharing",
+  "license": "None",
+  "authors": "Tim Condon",
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source": {
+    "git": "git@bitbucket.org:brokenhandsio/CodeSharing.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "Sources/RemindersCore/**/*.swift",
+  "swift_version": "5.0"
+}
