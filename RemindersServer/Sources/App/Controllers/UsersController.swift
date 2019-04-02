@@ -9,6 +9,7 @@ struct UsersController: RouteCollection {
         usersGroup.post(use: createHandler)
         usersGroup.get(User.parameter, use: getHandler)
         usersGroup.get(use: getAllHandler)
+        usersGroup.put(User.parameter, use: updateHandler)
     }
     
     func createHandler(_ req: Request) throws -> Future<User> {

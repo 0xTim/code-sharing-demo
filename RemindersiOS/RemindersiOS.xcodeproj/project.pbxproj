@@ -8,23 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		23BAB49D2252D77E00D8E91D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAB49C2252D77E00D8E91D /* AppDelegate.swift */; };
-		23BAB49F2252D77E00D8E91D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAB49E2252D77E00D8E91D /* FirstViewController.swift */; };
-		23BAB4A12252D77E00D8E91D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAB4A02252D77E00D8E91D /* SecondViewController.swift */; };
+		23BAB49F2252D77E00D8E91D /* RemindersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAB49E2252D77E00D8E91D /* RemindersTableViewController.swift */; };
+		23BAB4A12252D77E00D8E91D /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAB4A02252D77E00D8E91D /* UsersTableViewController.swift */; };
 		23BAB4A42252D77E00D8E91D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23BAB4A22252D77E00D8E91D /* Main.storyboard */; };
 		23BAB4A62252D77F00D8E91D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23BAB4A52252D77F00D8E91D /* Assets.xcassets */; };
 		23BAB4A92252D77F00D8E91D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23BAB4A72252D77F00D8E91D /* LaunchScreen.storyboard */; };
+		23BAB6D82252E03700D8E91D /* ResourceRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAB6D72252E03700D8E91D /* ResourceRequests.swift */; };
+		23BAB6E02252E63800D8E91D /* ErrorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAB6DF2252E63800D8E91D /* ErrorPresenter.swift */; };
 		E7970CEF2CB126C382F08C63 /* Pods_RemindersiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF4CF59776D4D1B81C42257 /* Pods_RemindersiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23BAB4992252D77E00D8E91D /* RemindersiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemindersiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23BAB49C2252D77E00D8E91D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		23BAB49E2252D77E00D8E91D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		23BAB4A02252D77E00D8E91D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		23BAB49E2252D77E00D8E91D /* RemindersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersTableViewController.swift; sourceTree = "<group>"; };
+		23BAB4A02252D77E00D8E91D /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 		23BAB4A32252D77E00D8E91D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23BAB4A52252D77F00D8E91D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23BAB4A82252D77F00D8E91D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23BAB4AA2252D77F00D8E91D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23BAB6D72252E03700D8E91D /* ResourceRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceRequests.swift; sourceTree = "<group>"; };
+		23BAB6DF2252E63800D8E91D /* ErrorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPresenter.swift; sourceTree = "<group>"; };
 		4CF4CF59776D4D1B81C42257 /* Pods_RemindersiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemindersiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16EEB2C28ED11FD0DA27075 /* Pods-RemindersiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemindersiOS.debug.xcconfig"; path = "Target Support Files/Pods-RemindersiOS/Pods-RemindersiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B65189DD2A4728EAA4301A66 /* Pods-RemindersiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemindersiOS.release.xcconfig"; path = "Target Support Files/Pods-RemindersiOS/Pods-RemindersiOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -64,12 +68,14 @@
 			isa = PBXGroup;
 			children = (
 				23BAB49C2252D77E00D8E91D /* AppDelegate.swift */,
-				23BAB49E2252D77E00D8E91D /* FirstViewController.swift */,
-				23BAB4A02252D77E00D8E91D /* SecondViewController.swift */,
+				23BAB49E2252D77E00D8E91D /* RemindersTableViewController.swift */,
+				23BAB4A02252D77E00D8E91D /* UsersTableViewController.swift */,
 				23BAB4A22252D77E00D8E91D /* Main.storyboard */,
 				23BAB4A52252D77F00D8E91D /* Assets.xcassets */,
 				23BAB4A72252D77F00D8E91D /* LaunchScreen.storyboard */,
 				23BAB4AA2252D77F00D8E91D /* Info.plist */,
+				23BAB6D72252E03700D8E91D /* ResourceRequests.swift */,
+				23BAB6DF2252E63800D8E91D /* ErrorPresenter.swift */,
 			);
 			path = RemindersiOS;
 			sourceTree = "<group>";
@@ -88,7 +94,6 @@
 				A16EEB2C28ED11FD0DA27075 /* Pods-RemindersiOS.debug.xcconfig */,
 				B65189DD2A4728EAA4301A66 /* Pods-RemindersiOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -212,9 +217,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23BAB4A12252D77E00D8E91D /* SecondViewController.swift in Sources */,
+				23BAB4A12252D77E00D8E91D /* UsersTableViewController.swift in Sources */,
+				23BAB6E02252E63800D8E91D /* ErrorPresenter.swift in Sources */,
+				23BAB6D82252E03700D8E91D /* ResourceRequests.swift in Sources */,
 				23BAB49D2252D77E00D8E91D /* AppDelegate.swift in Sources */,
-				23BAB49F2252D77E00D8E91D /* FirstViewController.swift in Sources */,
+				23BAB49F2252D77E00D8E91D /* RemindersTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
