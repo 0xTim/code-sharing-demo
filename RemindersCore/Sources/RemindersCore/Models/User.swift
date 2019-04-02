@@ -5,7 +5,6 @@ public final class User: Codable {
     public var name: String
     public var username: String
     public var status: String
-    public var lastUpdated: Date?
     
     public init(id: UUID?, name: String, username: String, status: String) {
         self.id = id

@@ -29,7 +29,6 @@ struct UsersController: RouteCollection {
             user.name = updateData.name
             user.username = updateData.name
             user.status = updateData.status
-            user.lastUpdated = Date()
             return user.save(on: req)
         }
     }

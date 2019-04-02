@@ -69,11 +69,7 @@ extension UsersTableViewController {
         let user = users[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath)
         cell.textLabel?.text = user.name
-        if let updatedTime = user.lastUpdated {
-            cell.detailTextLabel?.text = "\(user.status) - updated: \(updatedTime.pretty)"
-        } else {
-            cell.detailTextLabel?.text = user.status
-        }
+        cell.detailTextLabel?.text = user.status
         return cell
     }
 }
