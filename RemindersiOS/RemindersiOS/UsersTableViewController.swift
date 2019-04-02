@@ -44,6 +44,18 @@ class UsersTableViewController: UITableViewController {
             }
         }
     }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "UserDetailSegue" {
+            guard let destination = segue.destination as? UsersDetailTableViewController,
+                let indexPath = tableView.indexPathForSelectedRow else {
+                    return
+            }
+            
+            destination.user = users[indexPath.row]
+        }
+    }
 }
 
 // MARK: - UITableViewDataSource

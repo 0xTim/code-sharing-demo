@@ -15,6 +15,7 @@
 		23BAB4A92252D77F00D8E91D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23BAB4A72252D77F00D8E91D /* LaunchScreen.storyboard */; };
 		23BAB6D82252E03700D8E91D /* ResourceRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAB6D72252E03700D8E91D /* ResourceRequests.swift */; };
 		23BAB6E02252E63800D8E91D /* ErrorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAB6DF2252E63800D8E91D /* ErrorPresenter.swift */; };
+		23BAB6E2225353C300D8E91D /* UsersDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAB6E1225353C300D8E91D /* UsersDetailTableViewController.swift */; };
 		E7970CEF2CB126C382F08C63 /* Pods_RemindersiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF4CF59776D4D1B81C42257 /* Pods_RemindersiOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		23BAB4AA2252D77F00D8E91D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23BAB6D72252E03700D8E91D /* ResourceRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceRequests.swift; sourceTree = "<group>"; };
 		23BAB6DF2252E63800D8E91D /* ErrorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPresenter.swift; sourceTree = "<group>"; };
+		23BAB6E1225353C300D8E91D /* UsersDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersDetailTableViewController.swift; sourceTree = "<group>"; };
 		4CF4CF59776D4D1B81C42257 /* Pods_RemindersiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemindersiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16EEB2C28ED11FD0DA27075 /* Pods-RemindersiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemindersiOS.debug.xcconfig"; path = "Target Support Files/Pods-RemindersiOS/Pods-RemindersiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B65189DD2A4728EAA4301A66 /* Pods-RemindersiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemindersiOS.release.xcconfig"; path = "Target Support Files/Pods-RemindersiOS/Pods-RemindersiOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				23BAB4AA2252D77F00D8E91D /* Info.plist */,
 				23BAB6D72252E03700D8E91D /* ResourceRequests.swift */,
 				23BAB6DF2252E63800D8E91D /* ErrorPresenter.swift */,
+				23BAB6E1225353C300D8E91D /* UsersDetailTableViewController.swift */,
 			);
 			path = RemindersiOS;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23BAB4A12252D77E00D8E91D /* UsersTableViewController.swift in Sources */,
+				23BAB6E2225353C300D8E91D /* UsersDetailTableViewController.swift in Sources */,
 				23BAB6E02252E63800D8E91D /* ErrorPresenter.swift in Sources */,
 				23BAB6D82252E03700D8E91D /* ResourceRequests.swift in Sources */,
 				23BAB49D2252D77E00D8E91D /* AppDelegate.swift in Sources */,
