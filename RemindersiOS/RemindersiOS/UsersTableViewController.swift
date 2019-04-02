@@ -70,10 +70,19 @@ extension UsersTableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath)
         cell.textLabel?.text = user.name
         if let updatedTime = user.lastUpdated {
-            cell.detailTextLabel?.text = "Last updated: \(updatedTime)"
+            cell.detailTextLabel?.text = "\(user.status) - updated: \(updatedTime.pretty)"
         } else {
-            cell.detailTextLabel?.text = ""
+            cell.detailTextLabel?.text = user.status
         }
         return cell
+    }
+}
+
+extension Date {
+    var pretty: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeStyle = .none
+        dateFormatter.dateStyle = .medium
+        return dateFormatter.string(from: self)
     }
 }
