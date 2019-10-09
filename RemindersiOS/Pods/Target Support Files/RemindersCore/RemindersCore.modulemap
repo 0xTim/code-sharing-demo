@@ -1,6 +1,0 @@
-framework module RemindersCore {
-  umbrella header "RemindersCore-umbrella.h"
-
-  export *
-  module * { export * }
-}

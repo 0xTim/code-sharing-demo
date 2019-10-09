@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23045F86234E83DB00BFC590 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23045F85234E83DB00BFC590 /* Reminder.swift */; };
+		23045F88234E83F000BFC590 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23045F87234E83F000BFC590 /* User.swift */; };
 		23BAB49D2252D77E00D8E91D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAB49C2252D77E00D8E91D /* AppDelegate.swift */; };
 		23BAB49F2252D77E00D8E91D /* RemindersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAB49E2252D77E00D8E91D /* RemindersTableViewController.swift */; };
 		23BAB4A12252D77E00D8E91D /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAB4A02252D77E00D8E91D /* UsersTableViewController.swift */; };
@@ -16,10 +18,11 @@
 		23BAB6D82252E03700D8E91D /* ResourceRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAB6D72252E03700D8E91D /* ResourceRequests.swift */; };
 		23BAB6E02252E63800D8E91D /* ErrorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAB6DF2252E63800D8E91D /* ErrorPresenter.swift */; };
 		23BAB6E2225353C300D8E91D /* UsersDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAB6E1225353C300D8E91D /* UsersDetailTableViewController.swift */; };
-		E7970CEF2CB126C382F08C63 /* Pods_RemindersiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF4CF59776D4D1B81C42257 /* Pods_RemindersiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23045F85234E83DB00BFC590 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		23045F87234E83F000BFC590 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		23BAB4992252D77E00D8E91D /* RemindersiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemindersiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23BAB49C2252D77E00D8E91D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23BAB49E2252D77E00D8E91D /* RemindersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersTableViewController.swift; sourceTree = "<group>"; };
@@ -31,9 +34,6 @@
 		23BAB6D72252E03700D8E91D /* ResourceRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceRequests.swift; sourceTree = "<group>"; };
 		23BAB6DF2252E63800D8E91D /* ErrorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPresenter.swift; sourceTree = "<group>"; };
 		23BAB6E1225353C300D8E91D /* UsersDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersDetailTableViewController.swift; sourceTree = "<group>"; };
-		4CF4CF59776D4D1B81C42257 /* Pods_RemindersiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemindersiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A16EEB2C28ED11FD0DA27075 /* Pods-RemindersiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemindersiOS.debug.xcconfig"; path = "Target Support Files/Pods-RemindersiOS/Pods-RemindersiOS.debug.xcconfig"; sourceTree = "<group>"; };
-		B65189DD2A4728EAA4301A66 /* Pods-RemindersiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemindersiOS.release.xcconfig"; path = "Target Support Files/Pods-RemindersiOS/Pods-RemindersiOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,20 +41,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7970CEF2CB126C382F08C63 /* Pods_RemindersiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23045F84234E83B700BFC590 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				23045F85234E83DB00BFC590 /* Reminder.swift */,
+				23045F87234E83F000BFC590 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		23BAB4902252D77E00D8E91D = {
 			isa = PBXGroup;
 			children = (
 				23BAB49B2252D77E00D8E91D /* RemindersiOS */,
 				23BAB49A2252D77E00D8E91D /* Products */,
 				B5396980554E4F9C43F8AE32 /* Pods */,
-				692659FFBFADF18FC7D7BA25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +76,7 @@
 		23BAB49B2252D77E00D8E91D /* RemindersiOS */ = {
 			isa = PBXGroup;
 			children = (
+				23045F84234E83B700BFC590 /* Models */,
 				23BAB49C2252D77E00D8E91D /* AppDelegate.swift */,
 				23BAB49E2252D77E00D8E91D /* RemindersTableViewController.swift */,
 				23BAB4A02252D77E00D8E91D /* UsersTableViewController.swift */,
@@ -83,19 +91,9 @@
 			path = RemindersiOS;
 			sourceTree = "<group>";
 		};
-		692659FFBFADF18FC7D7BA25 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4CF4CF59776D4D1B81C42257 /* Pods_RemindersiOS.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		B5396980554E4F9C43F8AE32 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A16EEB2C28ED11FD0DA27075 /* Pods-RemindersiOS.debug.xcconfig */,
-				B65189DD2A4728EAA4301A66 /* Pods-RemindersiOS.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -107,11 +105,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23BAB4AD2252D77F00D8E91D /* Build configuration list for PBXNativeTarget "RemindersiOS" */;
 			buildPhases = (
-				6A63220B2D99FF9501D851EC /* [CP] Check Pods Manifest.lock */,
 				23BAB4952252D77E00D8E91D /* Sources */,
 				23BAB4962252D77E00D8E91D /* Frameworks */,
 				23BAB4972252D77E00D8E91D /* Resources */,
-				A4D3F002CCBA3F480618AEED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,61 +164,16 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		6A63220B2D99FF9501D851EC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RemindersiOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A4D3F002CCBA3F480618AEED /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RemindersiOS/Pods-RemindersiOS-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RemindersCore/RemindersCore.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RemindersCore.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RemindersiOS/Pods-RemindersiOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		23BAB4952252D77E00D8E91D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				23BAB4A12252D77E00D8E91D /* UsersTableViewController.swift in Sources */,
+				23045F86234E83DB00BFC590 /* Reminder.swift in Sources */,
 				23BAB6E2225353C300D8E91D /* UsersDetailTableViewController.swift in Sources */,
 				23BAB6E02252E63800D8E91D /* ErrorPresenter.swift in Sources */,
+				23045F88234E83F000BFC590 /* User.swift in Sources */,
 				23BAB6D82252E03700D8E91D /* ResourceRequests.swift in Sources */,
 				23BAB49D2252D77E00D8E91D /* AppDelegate.swift in Sources */,
 				23BAB49F2252D77E00D8E91D /* RemindersTableViewController.swift in Sources */,
@@ -369,7 +320,6 @@
 		};
 		23BAB4AE2252D77F00D8E91D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A16EEB2C28ED11FD0DA27075 /* Pods-RemindersiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -388,7 +338,6 @@
 		};
 		23BAB4AF2252D77F00D8E91D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B65189DD2A4728EAA4301A66 /* Pods-RemindersiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
