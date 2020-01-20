@@ -61,7 +61,6 @@
 			children = (
 				23BAB49B2252D77E00D8E91D /* RemindersiOS */,
 				23BAB49A2252D77E00D8E91D /* Products */,
-				B5396980554E4F9C43F8AE32 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,13 +88,6 @@
 				23BAB6E1225353C300D8E91D /* UsersDetailTableViewController.swift */,
 			);
 			path = RemindersiOS;
-			sourceTree = "<group>";
-		};
-		B5396980554E4F9C43F8AE32 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
