@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RemindersCore
 
 class UsersTableViewController: UITableViewController {
     
@@ -68,7 +69,11 @@ extension UsersTableViewController {
         let user = users[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath)
         cell.textLabel?.text = user.name
-        cell.detailTextLabel?.text = user.status
+        if let lastUpdated = user.lastUpdated {
+            cell.detailTextLabel?.text = "\(user.status) - \(lastUpdated.pretty)"
+        } else {
+            cell.detailTextLabel?.text = user.status
+        }
         return cell
     }
 }

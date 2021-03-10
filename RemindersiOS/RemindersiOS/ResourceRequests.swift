@@ -1,4 +1,5 @@
 import Foundation
+import RemindersCore
 
 enum GetResourcesRequest<ResourceType> {
     case success([ResourceType])

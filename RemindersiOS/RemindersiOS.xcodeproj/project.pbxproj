@@ -3,12 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23045F86234E83DB00BFC590 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23045F85234E83DB00BFC590 /* Reminder.swift */; };
-		23045F88234E83F000BFC590 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23045F87234E83F000BFC590 /* User.swift */; };
 		23BAB49D2252D77E00D8E91D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAB49C2252D77E00D8E91D /* AppDelegate.swift */; };
 		23BAB49F2252D77E00D8E91D /* RemindersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAB49E2252D77E00D8E91D /* RemindersTableViewController.swift */; };
 		23BAB4A12252D77E00D8E91D /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAB4A02252D77E00D8E91D /* UsersTableViewController.swift */; };
@@ -18,11 +16,10 @@
 		23BAB6D82252E03700D8E91D /* ResourceRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAB6D72252E03700D8E91D /* ResourceRequests.swift */; };
 		23BAB6E02252E63800D8E91D /* ErrorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAB6DF2252E63800D8E91D /* ErrorPresenter.swift */; };
 		23BAB6E2225353C300D8E91D /* UsersDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAB6E1225353C300D8E91D /* UsersDetailTableViewController.swift */; };
+		23D3D9B825F981E8009A1EBD /* RemindersCore in Frameworks */ = {isa = PBXBuildFile; productRef = 23D3D9B725F981E8009A1EBD /* RemindersCore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		23045F85234E83DB00BFC590 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
-		23045F87234E83F000BFC590 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		23BAB4992252D77E00D8E91D /* RemindersiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemindersiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23BAB49C2252D77E00D8E91D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23BAB49E2252D77E00D8E91D /* RemindersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersTableViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +31,7 @@
 		23BAB6D72252E03700D8E91D /* ResourceRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceRequests.swift; sourceTree = "<group>"; };
 		23BAB6DF2252E63800D8E91D /* ErrorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPresenter.swift; sourceTree = "<group>"; };
 		23BAB6E1225353C300D8E91D /* UsersDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersDetailTableViewController.swift; sourceTree = "<group>"; };
+		23D3D9B325F981D3009A1EBD /* RemindersCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RemindersCore; path = ../../RemindersCore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,26 +39,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23D3D9B825F981E8009A1EBD /* RemindersCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		23045F84234E83B700BFC590 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				23045F85234E83DB00BFC590 /* Reminder.swift */,
-				23045F87234E83F000BFC590 /* User.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		23BAB4902252D77E00D8E91D = {
 			isa = PBXGroup;
 			children = (
 				23BAB49B2252D77E00D8E91D /* RemindersiOS */,
 				23BAB49A2252D77E00D8E91D /* Products */,
+				23D3D9B625F981E8009A1EBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,7 +66,7 @@
 		23BAB49B2252D77E00D8E91D /* RemindersiOS */ = {
 			isa = PBXGroup;
 			children = (
-				23045F84234E83B700BFC590 /* Models */,
+				23D3D9B325F981D3009A1EBD /* RemindersCore */,
 				23BAB49C2252D77E00D8E91D /* AppDelegate.swift */,
 				23BAB49E2252D77E00D8E91D /* RemindersTableViewController.swift */,
 				23BAB4A02252D77E00D8E91D /* UsersTableViewController.swift */,
@@ -88,6 +79,13 @@
 				23BAB6E1225353C300D8E91D /* UsersDetailTableViewController.swift */,
 			);
 			path = RemindersiOS;
+			sourceTree = "<group>";
+		};
+		23D3D9B625F981E8009A1EBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,6 +104,9 @@
 			dependencies = (
 			);
 			name = RemindersiOS;
+			packageProductDependencies = (
+				23D3D9B725F981E8009A1EBD /* RemindersCore */,
+			);
 			productName = RemindersiOS;
 			productReference = 23BAB4992252D77E00D8E91D /* RemindersiOS.app */;
 			productType = "com.apple.product-type.application";
@@ -162,10 +163,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				23BAB4A12252D77E00D8E91D /* UsersTableViewController.swift in Sources */,
-				23045F86234E83DB00BFC590 /* Reminder.swift in Sources */,
 				23BAB6E2225353C300D8E91D /* UsersDetailTableViewController.swift in Sources */,
 				23BAB6E02252E63800D8E91D /* ErrorPresenter.swift in Sources */,
-				23045F88234E83F000BFC590 /* User.swift in Sources */,
 				23BAB6D82252E03700D8E91D /* ResourceRequests.swift in Sources */,
 				23BAB49D2252D77E00D8E91D /* AppDelegate.swift in Sources */,
 				23BAB49F2252D77E00D8E91D /* RemindersTableViewController.swift in Sources */,
@@ -370,6 +369,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		23D3D9B725F981E8009A1EBD /* RemindersCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RemindersCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 23BAB4912252D77E00D8E91D /* Project object */;
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RemindersCore
 
 class RemindersTableViewController: UITableViewController {
 
