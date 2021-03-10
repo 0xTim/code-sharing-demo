@@ -1,18 +1,17 @@
 import Vapor
-import RemindersCore
-import FluentSQLite
-import Foundation
+//import RemindersCore
+import Fluent
 
 struct RemindersController: RouteCollection {
-    func boot(router: Router) throws {
-        let remindersGroup = router.grouped("api", "reminders")
-        
+    func boot(routes: RoutesBuilder) throws {
+        let remindersGroup = routes.grouped("api", "reminders")
+
     }
-    
+
     // Create
-    
+
     // Get all
-    
+
     // Get single
 }
 

@@ -1,7 +1,7 @@
+import Fluent
 import Vapor
 
-/// Register your application's routes here.
-public func routes(_ router: Router) throws {
-    try router.register(collection: UsersController())
-    try router.register(collection: RemindersController())
+func routes(_ app: Application) throws {
+    try app.register(collection: UsersController())
+    try app.register(collection: RemindersController())
 }
