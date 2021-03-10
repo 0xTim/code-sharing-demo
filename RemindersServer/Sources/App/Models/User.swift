@@ -19,6 +19,9 @@ final class User: Model, Content {
     @Field(key: "status")
     var status: String
 
+    @Field(key: "lastUpdated")
+    var lastUpdated: Date?
+
     init() { }
 
     init(id: UUID? = nil, name: String, username: String, password: String, status: String) {
